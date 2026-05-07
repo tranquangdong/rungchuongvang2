@@ -671,9 +671,9 @@
   </div>
 
   <div class="answers-grid" id="answers-grid">
-    <button class="answer-btn" id="btn-A" onclick="selectAnswer(0)"><span class="letter">A</span><span class="ans-text"></span></button>
-    <button class="answer-btn" id="btn-B" onclick="selectAnswer(1)"><span class="letter">B</span><span class="ans-text"></span></button>
-    <button class="answer-btn" id="btn-C" onclick="selectAnswer(2)"><span class="letter">C</span><span class="ans-text"></span></button>
+    <button class="answer-btn" id="btn-A" onclick="selectAnswer(0)"><span class="letter">1</span><span class="ans-text"></span></button>
+    <button class="answer-btn" id="btn-B" onclick="selectAnswer(1)"><span class="letter">2</span><span class="ans-text"></span></button>
+    <button class="answer-btn" id="btn-C" onclick="selectAnswer(2)"><span class="letter">3</span><span class="ans-text"></span></button>
   </div>
 </div>
 
@@ -1000,7 +1000,7 @@ function showQuestion(index) {
   }
 
   // Answer buttons
-  const letters = ['A', 'B', 'C'];
+  const letters = ['1', '2', '3'];
   const btnIds = ['btn-A', 'btn-B', 'btn-C'];
   btnIds.forEach((id, i) => {
     const btn = document.getElementById(id);
