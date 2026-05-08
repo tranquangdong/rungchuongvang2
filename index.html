@@ -1068,9 +1068,9 @@ function speakText(text, lang, onEnd) {
 function speakQuestion(q) {
   const lang = q.lang;
   const fullText = q.question + '. ' +
-    (lang === 'en' ? 'A: ' : 'A. ') + q.answers[0] + '. ' +
-    (lang === 'en' ? 'B: ' : 'B. ') + q.answers[1] + '. ' +
-    (lang === 'en' ? 'C: ' : 'C. ') + q.answers[2];
+    '1. ' + q.answers[0] + '. ' +
+    '2. ' + q.answers[1] + '. ' +
+    '3. ' + q.answers[2];
   clearCountdown();
   speakText(fullText, lang, startCountdown);
 }
